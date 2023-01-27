@@ -50,12 +50,6 @@ function cleanText () {
     block.remove(el3)
 }
 
-let n = 0;
-
-btn.addEventListener('click', () => {
-    n++
-})
-
 btn.addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputValue.value}`
@@ -71,11 +65,12 @@ btn.addEventListener('click', () => {
         let example = word[0].meanings[last].definitions[0].example;
         let audio = word[0].phonetics[lastPhonetics].audio;
     
-        if(n === 1){
-            getWord(searchedWord, meanings, transcript, example, audio)
-        }else{
-            getWord(searchedWord, meanings, transcript, example, audio)
-        }
+        getWord(searchedWord, meanings, transcript, example, audio)
     }
+
+    xhr.onerror = () => {
+        alert('Something go wrong')
+    }
+
     xhr.send();
 })
