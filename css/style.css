@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_con{
+    display: flex;
+    flex-direction: row;
+}
+
+.input{
+    width: 100%;
+    font-size: 20px;
+    margin-right: 10px;
+    /* border-radius: 10px; */
+}
+
+.btn{
+    width: 40%;
+    font-size: 15px;
+}
+
+.block{
+    width: 25%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+}
+
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+.name p:first-child{
+    margin-right: 5px;
+}
+
+.name p:last-child{
+    color: rgb(255, 115, 0);
+}
+
+.partOfSpeech{
+    display: flex;
+    flex-direction: row;
+}
+
+.partOfSpeech p:first-child{
+    margin-right: 5px;
+}
+
+.partOfSpeech p:last-child{
+    color: rgb(255, 115, 0);
+}
+
+.transcription{
+    display: flex;
+    flex-direction: row;
+}
+
+.transcription p:first-child{
+    margin-right: 5px;
+}
+
+.transcription p:last-child{
+    color: rgb(255, 115, 0);
+}
+
+
+.example{
+    display: flex;
+    flex-direction: row;
+}
+
+.example p:first-child{
+    margin-right: 5px;
+}
+
+.example p:last-child{
+    color: rgb(255, 115, 0);
+}
+
+audio{
+    margin-top: 10px;
+}
